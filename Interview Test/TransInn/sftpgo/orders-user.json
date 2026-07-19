@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "orders",
+      "status": 1,
+      "expiration_date": 0,
+      "password": "orders",
+      "home_dir": "/srv/sftpgo/data/orders",
+      "permissions": {
+        "/": ["*"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+services:
+  integration-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    environment:
+      - xdock.api.url=http://app:8080
+      - xdock.sftp.host=sftpgo
+      - xdock.sftp.port=2022
+      - xdock.sftp.user=orders
+      - xdock.sftp.password=orders
+    networks:
+      - xdock-network
+
+networks:
+  xdock-network:
+    external: true
+    name: order-network

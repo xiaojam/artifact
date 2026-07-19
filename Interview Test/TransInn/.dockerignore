@@ -1,0 +1,19 @@
+# packaged artifacts
+*.deb
+!xdock.deb
+
+# IDEs
+application/.idea/
+.vscode/
+
+# compiled / logs / OS
+*.class
+*.log
+.DS_Store
+
+# not needed inside the app image build
+Dockerfile
+docker-compose.yml
+README.md
+CLAUDE.md
+sftpgo/
