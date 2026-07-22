@@ -19,5 +19,3 @@ logging:
     test:
       takehome:
         transinnovate: INFO
-  file:
-    name: /var/log/transinnovate-app.log
